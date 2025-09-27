@@ -1,1 +1,1 @@
-package exercise1;
+package exercise2;
