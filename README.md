@@ -1,3 +1,5 @@
+
+ 
  🎯 Java Design Pattern Exercises
 
 This repository contains **Java implementations** of common design patterns as part of a coding exercise.
