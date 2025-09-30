@@ -1,0 +1,41 @@
+
+## Main Class (Driver)
+
+This is the entry point of the application that manages a schedule of tasks using the **Singleton** pattern for the `ScheduleManager` and the **Observer** pattern for task updates.
+
+### Features:
+
+* Allows the user to interact with the schedule via a simple command-line interface.
+* Users can add tasks of different types (`exercise`, `eat`, `work`) with specified times.
+* The `ScheduleManager` notifies observers, such as the `ConsoleObserver`, whenever tasks are added.
+* Users can view the list of scheduled tasks at any time.
+* The application runs in a loop until the user types `exit`.
+
+### How it works:
+
+* The `ScheduleManager` instance is retrieved using the `getInstance()` method (Singleton pattern).
+* A `ConsoleObserver` is registered to listen for changes and display updates.
+* User input is captured through the console using a `Scanner`.
+* Based on user commands (`add`, `view`, `exit`), tasks can be added, viewed, or the program can be exited.
+* Task creation is handled by the `TaskFactory` based on user-specified task type and time.
+
+### Usage example:
+
+```plaintext
+Options: add / view / exit
+Enter option: add
+Task type (exercise/eat/work): exercise
+Time (HH:MM): 07:00
+
+Options: add / view / exit
+Enter option: view
+1. Exercise task at 07:00
+
+Options: add / view / exit
+Enter option: exit
+Exiting...
+```
+
+---
+
+Would you like me to help you integrate this into a full README or add more technical details?
